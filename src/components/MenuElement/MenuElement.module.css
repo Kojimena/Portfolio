@@ -8,6 +8,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 10%;
+    margin-bottom: 2%;
 }
 
 .buttonContainer span.number{
@@ -18,4 +19,5 @@
 .buttonContainer span.label{
     font-size: 60px;
     font-family: "StretchPro";
+    text-transform: uppercase;
 }

@@ -4,8 +4,8 @@ import MenuElement from "../../components/MenuElement/MenuElement"
 import { navigate } from "../../store"
 
 const Menu = () => {
-  const handleNavigate = ({ path }) => {
-    navigate(path)
+  const handleNavigate = () => {
+    navigate("/")
   }
 
   return (
@@ -19,11 +19,43 @@ const Menu = () => {
         <div className={styles.menu}>
           <MenuElement
             number="01"
-            label="Home"
+            label="HHome"
             backgroundColor="transparent"
             textColor="#4A696C"
             textnumberColor="#606887"
-            onClick={handleNavigate("/")}
+            path="/"
+          />
+          <MenuElement
+            number="02"
+            label="Proyectos"
+            backgroundColor="transparent"
+            textColor="#4A696C"
+            textnumberColor="#606887"
+            path="/projects"
+          />
+          <MenuElement
+            number="03"
+            label="SStack"
+            backgroundColor="transparent"
+            textColor="#4A696C"
+            textnumberColor="#606887"
+            path="/stack"
+          />
+          <MenuElement
+            number="04"
+            label="Abbout"
+            backgroundColor="transparent"
+            textColor="#4A696C"
+            textnumberColor="#606887"
+            path="/about"
+          />
+          <MenuElement
+            number="05"
+            label="Conntacto"
+            backgroundColor="transparent"
+            textColor="#4A696C"
+            textnumberColor="#606887"
+            path="/contact"
           />
         </div>
       </div>
