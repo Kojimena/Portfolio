@@ -1,0 +1,125 @@
+.homecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.header{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header img{
+    fill: #606887;
+}
+
+.header button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.name h1{
+    font-size: 90px;
+    color: #606887;
+    text-transform: uppercase;
+}
+
+.name h1::selection, .description p::selection{ 
+    background: #A0CA68;
+}
+
+.description p{
+    font-size: 20px;
+    color: #606887;
+    text-align: center;
+}
+
+.homecontainer .bubble{
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: rotate(-90deg);
+    width: 400px;
+    height: 400px;
+
+}
+
+.homecontainer .bubble2{
+    position: absolute;
+    bottom: -40%;
+    right: 80%;
+    transform: rotate(10deg);
+    width: 400px;
+    height: 400px;
+}
+
+.homecontainer .bubble3{
+    position: absolute;
+    bottom: -10%;
+    left: 80%;
+    transform: rotate(90deg);
+    width: 400px;
+    height: 400px;
+}
+
+.homecontainer .bubble4{
+    position: absolute;
+    top: -40%;
+    left: -10%;
+    transform: rotate(90deg);
+    width: 400px;
+    height: 400px;
+}
+
+@keyframes float {
+    0% {
+      transform: translate(0);
+      opacity: 1;
+    }
+    25% {
+      transform: translate(50px, -50px);
+    }
+    50% {
+      transform: translate(100px, 0);
+    }
+    75% {
+      transform: translate(50px, 50px);
+    }
+    100% {
+      transform: translate(0);
+      opacity: 0.7;
+    }
+  }
+
+  .homecontainer .bubble {
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  .homecontainer .bubble2 {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .homecontainer .bubble3 {
+    animation: float 7s ease-in-out infinite;
+  }
+  
+  .homecontainer .bubble4 {
+    animation: float 8s ease-in-out infinite;
+  }
+  
+.header img{
+    cursor: pointer;
+
+}

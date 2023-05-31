@@ -1,0 +1,21 @@
+.buttonContainer button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%;
+}
+
+.buttonContainer span.number{
+    font-size: 40px;
+    
+}
+
+.buttonContainer span.label{
+    font-size: 60px;
+    font-family: "StretchPro";
+}
