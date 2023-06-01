@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./Home.module.css"
 import { navigate } from "../../store"
+import ArrowElement from "../../components/ArrowElement/ArrowElement"
 
 const Home = () => {
   const handleNavigate = () => {
@@ -40,6 +41,10 @@ const Home = () => {
         </div>
         <div className={styles.description}>
           <p>Front-end web developer y diseñadora UX/UI </p>
+        </div>
+        <div className={styles.arrow}>
+          <ArrowElement text="Proyectos" path="/projects" />
+          <ArrowElement text="Sobre mí" path="/about" />
         </div>
       </div>
     </div>

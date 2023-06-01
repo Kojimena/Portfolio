@@ -1,0 +1,21 @@
+.buttonContainer button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.buttonContainer .text{
+    font-size: 20px;
+    color : #606887;
+    width: 100%;
+}
+
+.buttonContainer img {
+    width: 20%;
+}

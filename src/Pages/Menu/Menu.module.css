@@ -40,3 +40,22 @@
     align-items: center;
     justify-content: center;
 }
+
+.menucontainer .bubble{
+    position: absolute;
+    top: -30%;
+    left: 70%;
+    transform: rotate(-90deg);
+    width: 400px;
+    height: 400px;
+
+}
+
+.menucontainer .bubble2{
+    position: absolute;
+    bottom: -40%;
+    right: 80%;
+    transform: rotate(10deg);
+    width: 400px;
+    height: 400px;
+}

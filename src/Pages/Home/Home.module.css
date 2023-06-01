@@ -26,6 +26,13 @@
     cursor: pointer;
 }
 
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .name h1{
     font-size: 90px;
     color: #606887;

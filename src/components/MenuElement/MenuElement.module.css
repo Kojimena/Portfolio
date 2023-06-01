@@ -9,6 +9,7 @@
     align-items: center;
     gap: 10%;
     margin-bottom: 2%;
+    width: 20%;
 }
 
 .buttonContainer span.number{
@@ -21,3 +22,8 @@
     font-family: "StretchPro";
     text-transform: uppercase;
 }
+
+.buttonContainer button:hover{
+    color: #A0CA68;
+}
+
