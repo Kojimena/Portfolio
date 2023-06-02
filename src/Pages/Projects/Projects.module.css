@@ -147,6 +147,7 @@ img.image{
     .projectscontainer{
         overflow-x: hidden;
         overflow-y: scroll;
+        width: 100%;
     }
   
     .title h1 {
