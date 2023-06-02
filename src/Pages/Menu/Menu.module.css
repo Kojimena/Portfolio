@@ -90,6 +90,16 @@
       width: 200px;
       height: 200px;
     }
+
+    .menucontainer .bubble{
+        top: -10%;
+        left: 60%;
+    }
+
+    .menucontainer .bubble2{
+        bottom: -10%;
+        right: 60%;
+    }
   
     .menu {
       margin-left: 10%;
