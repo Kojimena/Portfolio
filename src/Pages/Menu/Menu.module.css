@@ -59,3 +59,40 @@
     width: 400px;
     height: 400px;
 }
+
+/* Estilos para pantallas de tamaño grande (desktops, laptops) */
+@media (min-width: 1200px) {
+    .menucontainer .bubble, .menucontainer .bubble2{
+      width: 400px;
+      height: 400px;
+    }
+    
+    .menu {
+      margin-left: 30%;
+    }
+  }
+  
+  /* Estilos para pantallas de tamaño mediano (tablets) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .menucontainer .bubble, .menucontainer .bubble2{
+      width: 300px;
+      height: 300px;
+    }
+  
+    .menu {
+      margin-left: 20%;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (teléfonos móviles) */
+  @media (max-width: 967px) {
+    .menucontainer .bubble, .menucontainer .bubble2{
+      width: 200px;
+      height: 200px;
+    }
+  
+    .menu {
+      margin-left: 10%;
+    }
+  }
+  
