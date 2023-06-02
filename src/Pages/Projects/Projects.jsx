@@ -117,6 +117,9 @@ const Projects = () => {
           )}
         </Swiper>
       </div>
+      <div className={styles.titleproyects}>
+        <h1>Universidad</h1>
+      </div>
       <div className={styles.contentproyects}>
         {arrayProjects.map((project) => (
           <ProjectImage

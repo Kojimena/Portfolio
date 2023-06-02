@@ -5,7 +5,7 @@ import styles from "./ProjectImage.module.css"
 const ProjectImage = ({ name, image, url, desc }) => {
   return (
     <div className={styles.projectimagecontainer}>
-      <h2>{name}</h2>
+      <h2 className={styles.proyectname}>{name}</h2>
       <div className={styles.projectimg}>
         <button type="button" onClick={() => window.open(url)}>
           <img src={image} alt="img" className={styles.image} />

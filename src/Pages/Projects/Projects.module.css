@@ -6,7 +6,7 @@
     width: 100%;
     background-image: linear-gradient(to bottom, #b8e4dc, #96bebc, #77999c, #5b767b, #41545b);
     position: relative;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .header{
     position: absolute;
@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-.title h1{
+.title h1 {
     font-size: 60px;
     color: #fff;
     text-transform: uppercase;
@@ -68,5 +68,107 @@ img.image{
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 30px;
 }
+
+.titleproyects h1 {
+    font-size: 40px;
+    color: #41545b;
+    padding: 20px;
+    opacity: 0; /* Inicia la opacidad en 0 para el efecto de desvanecimiento */
+    position: relative; /* Es necesario para el desplazamiento */
+    left: -50px; /* Inicia un poco a la izquierda para el efecto de deslizamiento */
+    animation: slideIn 8s ease-out forwards; /* Aplica la animación definida abajo */
+}
+
+/* Define la animación */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        left: -50px;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+
+/* Estilos para pantallas de tamaño grande (desktops, laptops) */
+@media (min-width: 769px) {
+    .projectscontainer{
+        padding: 20px;
+    }
+  
+    .title h1 {
+        font-size: 60px;
+    }
+  
+    .contentslider{
+      width: 800px;
+      max-height: 600px;
+    }
+  
+    .titleproyects h1 {
+        font-size: 40px;
+    }
+  
+    .contentproyects{
+        flex-wrap: wrap;
+    }
+  }
+  
+  /* Estilos para pantallas de tamaño mediano (tablets) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .projectscontainer{
+        padding: 15px;
+    }
+  
+    .title h1 {
+        font-size: 50px;
+    }
+  
+    .contentslider{
+      width: 600px;
+      max-height: 450px;
+    }
+  
+    .titleproyects h1 {
+        font-size: 30px;
+    }
+  
+    .contentproyects{
+        flex-wrap: wrap;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (teléfonos móviles) */
+  @media (max-width: 967px) {
+    .projectscontainer{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+  
+    .title h1 {
+        font-size: 30px;
+    }
+  
+    .contentslider{
+      width: 300px;
+      max-height: 225px;
+    }
+  
+    .titleproyects h1 {
+        font-size: 20px;
+    }
+  
+    .contentproyects{
+        flex-wrap: wrap;
+    }
+
+    .header{
+        top: 4%;
+        right: 4%;
+    }
+  }
+  
