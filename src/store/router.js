@@ -6,4 +6,5 @@ export default createRouter([
   ["/contact", () => ({ page: "contact" })],
   ["/projects", () => ({ page: "projects" })],
   ["/menu", () => ({ page: "menu" })],
+  ["/stack", () => ({ page: "stack" })],
 ])
