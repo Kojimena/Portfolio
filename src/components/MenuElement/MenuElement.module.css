@@ -1,4 +1,4 @@
-.buttonContainer button{
+.buttonContainer button {
     background-color: transparent;
     border: none;
     outline: none;
@@ -9,21 +9,52 @@
     align-items: center;
     gap: 10%;
     margin-bottom: 2%;
-    width: 20%;
-}
-
-.buttonContainer span.number{
+    width: 100%;
+  }
+  
+  .buttonContainer span.number {
     font-size: 40px;
-    
-}
-
-.buttonContainer span.label{
+  }
+  
+  .buttonContainer span.label {
     font-size: 60px;
     font-family: "StretchPro";
     text-transform: uppercase;
-}
-
-.buttonContainer button:hover{
+  }
+  
+  .buttonContainer button:hover {
     color: #A0CA68;
-}
-
+  }
+  
+  /* Para tablets */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .buttonContainer button {
+      font-size: 30px;
+      width: 70%;
+    }
+  
+    .buttonContainer span.number {
+      font-size: 30px;
+    }
+  
+    .buttonContainer span.label {
+      font-size: 50px;
+    }
+  }
+  
+  /* Para móviles */
+  @media (max-width: 967px) {
+    .buttonContainer button {
+      font-size: 20px;
+      width: 100%;
+    }
+  
+    .buttonContainer span.number {
+      font-size: 20px;
+    }
+  
+    .buttonContainer span.label {
+      font-size: 20px;
+    }
+  }
+  

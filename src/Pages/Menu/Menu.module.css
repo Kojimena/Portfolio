@@ -94,5 +94,9 @@
     .menu {
       margin-left: 10%;
     }
+
+    .content{
+        gap : 20px;
+    }
   }
   
