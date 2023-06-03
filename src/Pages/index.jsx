@@ -5,6 +5,7 @@ import Home from "./Home/Home"
 import Menu from "./Menu/Menu"
 import Projects from "./Projects/Projects"
 import Stack from "./Stack/Stack"
+import About from "./About/About"
 
 const Page = () => {
   const { [routerKey]: route } = useStoreon(routerKey)
@@ -22,6 +23,9 @@ const Page = () => {
       break
     case "stack":
       Component = <Stack />
+      break
+    case "about":
+      Component = <About />
       break
     default:
       Component = <h1>404 Error</h1>
