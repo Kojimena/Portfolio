@@ -84,5 +84,17 @@
 @media (max-width: 767px) {
     .title h1 {
         font-size: 40px;
+        border-bottom: none;
+        position: relative;
+        top: 60px;
+    }
+
+    .header{
+        position: absolute;
+        top: 4%;
+        right: 5%;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
     }
 }

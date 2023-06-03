@@ -1,13 +1,4 @@
-import React, { useRef, useState } from "react"
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react"
-
-// Import Swiper styles
-import "swiper/css"
-import "swiper/css/effect-creative"
-
-// import required modules
-import { EffectCreative } from "swiper"
+import React, { useState } from "react"
 import styles from "./Stack.module.css"
 import { navigate } from "../../store"
 
