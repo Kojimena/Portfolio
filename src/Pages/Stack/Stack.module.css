@@ -1,64 +1,153 @@
-.myswiper{
-    margin: 100px auto;
-    width: 320px;
-    height: 240px;
-  }
-  
-.myswiper .sliderswipe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-  }
-  
-.sliderswipe:nth-child(1) {
-    background-color: rgb(206, 17, 17);
-  }
-  
-.sliderswipe:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
-  }
-  
-.sliderswipe:nth-child(3n) {
-    background-color: rgb(10, 184, 111);
-  }
-  
-.sliderswipe:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
-  }
-  
-.sliderswipe:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
-  }
-  
-.sliderswipe:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
-  }
-  
-.sliderswipe:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
-  }
-  
-.sliderswipe:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
-  }
-  
-.sliderswipe:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
-  }
-  
-.sliderswipe:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
-  }
 
 .stackcontainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  background-color: #41545B;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.header{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.title h1 {
+  font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    width: 80%;
+    border-bottom: 5px solid #fff;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2% 0 0 10%;
+}
+
+.header button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.stackleft{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 0 0 10%;
+}
+
+.stackleftitems{
+  display: flex;
+  flex-direction: column;
+  gap : 20px;
+}
+
+.stackelements{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%; /* Usar % en lugar de px */
+  min-height: 40vh; /* Usar vh en lugar de px */
+  border-radius: 10px 0 0 10px;
+  gap: 20px;
+}
+
+.stackleftitems button{
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.stackleftitems button:hover{
+  color: #41545B;
+  background-color: #B8E4DC;
+}
+
+.stackelemnts img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  max-width: 100%; /* Para hacer las imágenes responsivas */
+}
+
+.element{
+  width: 50%; /* Usar % en lugar de px */
+  height: 50%; /* Usar % en lugar de px */
+}
+
+.element p {
+  font-size: 20px;
+  color: #41545B;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .stackelements{
+    width: 800px; /* El tamaño original para pantallas más grandes */
+    min-height: 400px; /* El tamaño original para pantallas más grandes */
+  }
+
+  .element{
+    width: 200px; /* El tamaño original para pantallas más grandes */
+    height: 200px; /* El tamaño original para pantallas más grandes */
+  }
+}
+
+@media (max-width: 768px) {
+  .stackleft{
+    padding: 0 0 0 5%; /* El tamaño original para pantallas más pequeñas */
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
+  }
+
+  .stackleftitems{
+    gap : 10px; /* El tamaño original para pantallas más pequeñas */
+  }
+
+  .stackelements{
+    width: 100%; /* El tamaño original para pantallas más pequeñas */
+    min-height: 300px; /* El tamaño original para pantallas más pequeñas */
+  }
+
+  .element{
+    width: 50px; /* El tamaño original para pantallas más pequeñas */
+    height: 50px; /* El tamaño original para pantallas más pequeñas */
+  }
+
+  .header{
+    top: 5%; /* El tamaño original para pantallas más pequeñas */
+  }
+  .stackelements{
+    display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+  }
+
+  .element p {
+    font-size: 8px;
+    font-weight: bold;
+  }
 }
