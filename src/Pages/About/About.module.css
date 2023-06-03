@@ -80,3 +80,9 @@
 .arrow button:hover{
     color: #B8E4DC;
 }
+
+@media (max-width: 767px) {
+    .title h1 {
+        font-size: 40px;
+    }
+}
