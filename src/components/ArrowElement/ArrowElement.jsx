@@ -5,7 +5,13 @@ import { navigate } from "../../store"
 
 const ArrowElement = ({ path, text }) => {
   const onHandleClick = () => {
-    navigate(path)
+    if (path === "/about") {
+      navigate(path)
+    } else if (path === "/projects") {
+      navigate(path)
+    } else {
+      window.open(path, "_blank")
+    }
   }
   return (
     <div className={styles.buttonContainer}>
