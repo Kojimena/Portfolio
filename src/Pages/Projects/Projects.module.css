@@ -148,6 +148,8 @@ img.image{
         overflow-x: hidden;
         overflow-y: scroll;
         width: 100%;
+        height: 100vh;
+
     }
   
     .title h1 {
@@ -168,7 +170,7 @@ img.image{
     }
 
     .header{
-        top: 4%;
+        top: 8%;
         right: 4%;
     }
   }
