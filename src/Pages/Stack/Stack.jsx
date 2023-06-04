@@ -109,6 +109,12 @@ const Stack = () => {
   return (
     <div className={styles.stackcontainer}>
       <div className={styles.header}>
+        <button
+          onClick={() => window.open("https://github.com/Kojimena")}
+          type="button"
+        >
+          <img src="/images/github.svg" alt="logo" className={styles.github} />
+        </button>
         <button onClick={handleNavigate} type="button">
           <img src="/images/menuwhite.svg" alt="logo" className={styles.menu} />
         </button>
