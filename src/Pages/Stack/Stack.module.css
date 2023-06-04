@@ -127,27 +127,38 @@
   }
 
   .stackelements{
-    width: 100%; /* El tamaño original para pantallas más pequeñas */
-    min-height: 300px; /* El tamaño original para pantallas más pequeñas */
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 40px;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+    padding: 10px;
   }
 
   .element{
-    width: 50px; /* El tamaño original para pantallas más pequeñas */
-    height: 50px; /* El tamaño original para pantallas más pequeñas */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .element img {
+    width: 80px;
+    height: 80px;
+  }
+
 
   .header{
     top: 5%; /* El tamaño original para pantallas más pequeñas */
   }
-  .stackelements{
-    display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  grid-gap: 10px;
-  }
+
 
   .element p {
     font-size: 8px;
     font-weight: bold;
+    color: #fff;
   }
 }

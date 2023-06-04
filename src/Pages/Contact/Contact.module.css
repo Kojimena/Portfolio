@@ -22,6 +22,7 @@
 .title h1 {
     font-size: 60px;
     color: #41545b;
+    width: 80%;
     text-transform: uppercase;
     border-bottom: 5px solid #41545b;
 }
@@ -79,3 +80,54 @@
     display: flex;
     flex-direction: column;
 }
+
+  /* Estilos para pantallas pequeñas (teléfonos móviles) */
+  @media (max-width: 767px) {
+    .title h1 {
+        font-size: 40px;
+        border-bottom: none;
+        position: relative;
+        top: 60px;
+    }
+
+    .header{
+        position: absolute;
+        top: 4%;
+        right: 5%;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-top: 40px;
+    }
+    .contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .contactItem h2{
+        font-size: 20px;
+        color: #41545b;
+        text-transform: uppercase;
+    
+    }
+    .contactItem {
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+    }
+    .arrowelement{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+  }

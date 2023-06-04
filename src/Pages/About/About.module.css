@@ -43,6 +43,8 @@
 
 .about{
     width: 80%;
+    min-height: 100px;
+    font-size: 20px;
 }
 
 .about p{
@@ -98,3 +100,4 @@
         width: 100%;
     }
 }
+  

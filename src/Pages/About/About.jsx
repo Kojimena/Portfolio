@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./About.module.css"
 import { navigate } from "../../store"
+import ReactTypingEffect from "react-typing-effect"
 
 const About = () => {
   const handleNavigate = () => {
@@ -17,14 +18,19 @@ const About = () => {
         <h1>SOBBRE MÍ</h1>
       </div>
       <div className={styles.about}>
-        <p>
-          {" "}
-          Hola, mi nombre es Jimena Ortega, pero me gusta que me digan Jime. Soy
-          desarrolladora web front-end y diseñadora de UX/UI de
-          Guatemala.También me apasiona el café, la música y la poesía y siempre
-          estoy curiosa por aprender más cuando se trata de nuevas tecnologías y
-          codificación creativa.
-        </p>
+        <ReactTypingEffect
+          text={[
+            "Hola, mi nombre es Jimena Ortega, pero me gusta que me digan Jime.",
+            // eslint-disable-next-line max-len
+            "Soy desarrolladora web front-end y diseñadora de UX/UI de Guatemala. Me apasiona el café, la música y la poesía.",
+            "Siempre estoy curiosa por aprender más cuando se trata de nuevas tecnologías y codificación creativa.",
+            "Me encanta crear cosas que vivan en la web, ya sea aplicaciones, sitios web o cualquier cosa en el medio.",
+            "Me encanta trabajar con personas que comparten la misma pasión por la tecnología y el diseño.",
+            "Siempre estoy buscando nuevos desafíos y oportunidades para crecer profesionalmente.",
+          ]}
+          speed={20}
+          eraseSpeed={10}
+        />
       </div>
       <div className={styles.arrow}>
         <button
