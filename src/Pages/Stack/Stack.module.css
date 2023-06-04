@@ -129,12 +129,12 @@
   .stackelements{
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(3, 80px);
     grid-gap: 40px;
     width: 100%;
     background-color: transparent;
     align-items: center;
-    padding: 10px;
+    padding-top: 40px;
   }
 
   .element{
