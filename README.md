@@ -2,6 +2,9 @@
 
 Este es mi proyecto personal de portfolio. Este proyecto fue iniciado con Vite. El propósito de este proyecto es mostrar mis habilidades y trabajos anteriores de una manera fácil de usar.
 
+## Link 
+https://kojimena.netlify.app/
+
 ## Características
 
 - React 18.2.0
