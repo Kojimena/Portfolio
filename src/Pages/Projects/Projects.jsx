@@ -1,12 +1,10 @@
 import React, { useState } from "react"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
-
-// Import Swiper styles
+// eslint-disable-next-line import/no-unresolved
 import "swiper/css"
+// eslint-disable-next-line import/no-unresolved
 import "swiper/css/pagination"
-
-// import required modules
 import { Pagination } from "swiper"
 import styles from "./Projects.module.css"
 import { navigate } from "../../store"

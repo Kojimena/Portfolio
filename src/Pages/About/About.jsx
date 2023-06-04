@@ -1,7 +1,7 @@
 import React from "react"
+import ReactTypingEffect from "react-typing-effect"
 import styles from "./About.module.css"
 import { navigate } from "../../store"
-import ReactTypingEffect from "react-typing-effect"
 
 const About = () => {
   const handleNavigate = () => {

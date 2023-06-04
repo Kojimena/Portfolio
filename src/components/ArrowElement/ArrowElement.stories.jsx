@@ -1,4 +1,3 @@
-import React from "react"
 import ArrowElement from "./ArrowElement"
 
 export default {
