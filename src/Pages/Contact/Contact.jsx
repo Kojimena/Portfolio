@@ -8,6 +8,8 @@ const Contact = () => {
     navigate("/menu")
   }
 
+  const whatsappUrl = "https://wa.me/41303712"
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -44,6 +46,14 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <a
+        href={whatsappUrl}
+        className={styles.whatsappButton}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/images/whatsapp.svg" alt="WhatsApp" />
+      </a>
     </div>
   )
 }
