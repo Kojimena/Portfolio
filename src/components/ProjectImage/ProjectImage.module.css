@@ -29,6 +29,7 @@
     object-fit: cover;
     border-radius: 20px;
     mix-blend-mode: soft-light;
+    max-height: 200px;
 }
 
 .projectimg:hover img {

@@ -27,6 +27,18 @@ const Projects = () => {
 
   const arrayProjects = [
     {
+      name: "Whapay",
+      image: "/images/whapay.png",
+      url: "https://www.figma.com/proto/20wdWCAaeyTwJZTuuRIwps/whatsapp.ut-(Community)?page-id=0%3A1&type=design&node-id=105-231&viewport=510%2C182%2C0.2&t=20PAb6Jzt5vncuzG-1&scaling=scale-down&starting-point-node-id=2%3A180&mode=design",
+      desc: "Integrando opciones de pago a Whatsapp",
+    },
+    {
+      name: "Steam for moms",
+      image: "/images/steam.png",
+      url: "https://www.figma.com/proto/0Hm4NfpNN7W0rnHoOQnr7z/Steam-UI-(Community)?page-id=0%3A1&type=design&node-id=1-2&viewport=393%2C49%2C0.12&t=bscTc3pCC6t2cSRb-1&scaling=scale-down&starting-point-node-id=220%3A4&mode=design",
+      desc: "Rediseño de la plataforma Steam para madres",
+    },
+    {
       name: "Coffee machine",
       image: "/images/coffee.png",
       url: "https://github.com/Kojimena/WEB-L4",
@@ -116,7 +128,7 @@ const Projects = () => {
         </Swiper>
       </div>
       <div className={styles.titleproyects}>
-        <h1>Universidad</h1>
+        <h1>Otros proyectos</h1>
       </div>
       <div className={styles.contentproyects}>
         {arrayProjects.map((project) => (
