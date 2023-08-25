@@ -99,7 +99,7 @@ const Stack = () => {
   ]
 
   // Estado para la lista de íconos actual
-  const [currentIcons, setCurrentIcons] = useState([])
+  const [currentIcons, setCurrentIcons] = useState(frameworksList)
 
   // Funciones para actualizar la lista de íconos
   const showFrameworks = () => setCurrentIcons(frameworksList)
