@@ -10,16 +10,8 @@ const Menu = () => {
 
   return (
     <div className={styles.menucontainer}>
-      <img
-        src="/images/bubblechubby.svg"
-        alt="bubble1"
-        className={styles.bubble}
-      />
-      <img
-        src="/images/bubblechubby.svg"
-        alt="bubble2"
-        className={styles.bubble2}
-      />
+      <img src="/images/22.svg" alt="bubble1" className={styles.bubble} />
+      <img src="/images/22.svg" alt="bubble2" className={styles.bubble2} />
       <div className={styles.header}>
         <button onClick={handleNavigate} type="button">
           <img src="/images/menuclose.svg" alt="logo" className={styles.menu} />

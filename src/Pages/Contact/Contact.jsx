@@ -12,9 +12,11 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
+      <img src="/images/22.svg" alt="bubble1" className={styles.bubble} />
+      <img src="/images/22.svg" alt="bubble2" className={styles.bubble2} />
       <div className={styles.header}>
         <button onClick={handleNavigate} type="button">
-          <img src="/images/menu.svg" alt="logo" className={styles.menu} />
+          <img src="/images/menuwhite.svg" alt="logo" className={styles.menu} />
         </button>
       </div>
       <div className={styles.title}>
@@ -28,7 +30,7 @@ const Contact = () => {
               <ArrowElement
                 path="mailto:her21199@uvg.edu.gt"
                 text="Send email"
-                color="#000"
+                color="#fff"
               />
             </div>
           </div>
@@ -38,12 +40,12 @@ const Contact = () => {
               <ArrowElement
                 path="https://www.instagram.com/kojimena/"
                 text="Instagram"
-                color="#000"
+                color="#fff"
               />
               <ArrowElement
                 path="https://www.linkedin.com/in/jimena-ortega-202606204/"
                 text="LinkedIn"
-                color="#000"
+                color="#fff"
               />
             </div>
           </div>

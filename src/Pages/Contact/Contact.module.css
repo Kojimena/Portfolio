@@ -5,9 +5,10 @@
     width: 100%;
     position: relative;
     overflow-y: scroll;
-    background-color: #fff;
-    min-height: 100vh;
-    overflow-x: hidden;
+    background-image: url("/images/noise.png");
+    background-color: #040404;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .header{
@@ -21,10 +22,10 @@
 
 .title h1 {
     font-size: 60px;
-    color: #41545b;
+    color: #ffffff;
     width: 80%;
     text-transform: uppercase;
-    border-bottom: 5px solid #41545b;
+    border-bottom: 5px solid #ffffff;
 }
 
 .title{
@@ -59,7 +60,7 @@
 
 .contactItem h2{
     font-size: 30px;
-    color: #41545b;
+    color: #A0CA68;
     text-transform: uppercase;
 }
 
@@ -79,6 +80,25 @@
     width: 200px;
     display: flex;
     flex-direction: column;
+}
+
+.bubble{
+    position: absolute;
+    top: -40%;
+    left: 60%;
+    transform: rotate(-90deg);
+    width: 400px;
+    height: 400px;
+
+}
+
+.bubble2{
+    position: absolute;
+    bottom: -40%;
+    right: 80%;
+    transform: rotate(10deg);
+    width: 400px;
+    height: 400px;
 }
 
   /* Estilos para pantallas pequeñas (teléfonos móviles) */
@@ -129,6 +149,19 @@
         width: 280px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bubble{
+        top: 30%;
+        left: 80%;
+    }
+
+     .bubble2{
+        bottom: -30%;
+        right: 60%;
+        transform: rotate(180deg);
     }
   }
 
