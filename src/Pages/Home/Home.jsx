@@ -10,15 +10,26 @@ const Home = () => {
 
   return (
     <div className={styles.homecontainer}>
-
       <img
-        src="/images/bubblecorner.svg"
+        src="/images/9.svg"
+        alt="bubble1"
+        className={styles.bubble}
+        loading="lazy"
+      />
+      <img
+        src="/images/9.svg"
+        alt="bubble2"
+        className={styles.bubble2}
+        loading="lazy"
+      />
+      <img
+        src="/images/18.svg"
         alt="bubble3"
         className={styles.bubble3}
         loading="lazy"
       />
       <img
-        src="/images/bubblecorner.svg"
+        src="/images/18.svg"
         alt="bubble3"
         className={styles.bubble4}
         loading="lazy"

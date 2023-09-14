@@ -56,8 +56,8 @@
 
 .homecontainer .bubble{
     position: absolute;
-    top: -40%;
-    left: 50%;
+    top: -10%;
+    left: 60%;
     transform: rotate(-90deg);
     width: 400px;
     height: 400px;
@@ -66,7 +66,7 @@
 
 .homecontainer .bubble2{
     position: absolute;
-    bottom: -40%;
+    bottom: -10%;
     right: 80%;
     transform: rotate(10deg);
     width: 400px;
@@ -75,7 +75,7 @@
 
 .homecontainer .bubble3{
     position: absolute;
-    bottom: -10%;
+    bottom: -30%;
     left: 80%;
     transform: rotate(90deg);
     width: 400px;
@@ -84,7 +84,7 @@
 
 .homecontainer .bubble4{
     position: absolute;
-    top: -40%;
+    top: -10%;
     left: -10%;
     transform: rotate(90deg);
     width: 400px;
@@ -112,19 +112,19 @@
   }
 
   .homecontainer .bubble {
-    animation: float 5s ease-in-out infinite;
+    animation: float 5s ease-in-out;
   }
   
   .homecontainer .bubble2 {
-    animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out ;
   }
   
   .homecontainer .bubble3 {
-    animation: float 7s ease-in-out infinite;
+    animation: float 7s ease-in-out ;
   }
   
   .homecontainer .bubble4 {
-    animation: float 8s ease-in-out infinite;
+    animation: float 8s ease-in-out ;
   }
   
 .header img{
