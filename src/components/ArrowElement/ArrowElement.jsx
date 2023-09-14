@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styles from "./ArrowElement.module.css"
 import { navigate } from "../../store"
 
-const ArrowElement = ({ path, text }) => {
+const ArrowElement = ({ path, text, color }) => {
   const onHandleClick = () => {
     if (path === "/about") {
       navigate(path)
@@ -21,7 +21,10 @@ const ArrowElement = ({ path, text }) => {
           alt="arrow"
           className={styles.arrow}
         />
-        <span className={styles.text}>{text}</span>
+        <span className={styles.text} style={{ color }}>
+          {" "}
+          {text}{" "}
+        </span>
       </button>
     </div>
   )
@@ -30,6 +33,7 @@ const ArrowElement = ({ path, text }) => {
 ArrowElement.propTypes = {
   path: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 }
 
 export default ArrowElement

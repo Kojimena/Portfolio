@@ -10,29 +10,22 @@ const Home = () => {
 
   return (
     <div className={styles.homecontainer}>
-      <img
-        src="/images/bubblechubby.svg"
-        alt="bubble1"
-        className={styles.bubble}
-      />
-      <img
-        src="/images/bubblechubby.svg"
-        alt="bubble2"
-        className={styles.bubble2}
-      />
+
       <img
         src="/images/bubblecorner.svg"
         alt="bubble3"
         className={styles.bubble3}
+        loading="lazy"
       />
       <img
         src="/images/bubblecorner.svg"
         alt="bubble3"
         className={styles.bubble4}
+        loading="lazy"
       />
       <div className={styles.header}>
         <button onClick={handleNavigate} type="button">
-          <img src="/images/menu.svg" alt="logo" className={styles.menu} />
+          <img src="/images/menuwhite.svg" alt="logo" className={styles.menu} />
         </button>
       </div>
       <div className={styles.content}>

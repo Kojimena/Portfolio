@@ -27,7 +27,8 @@ const Contact = () => {
             <div className={styles.arrowelement}>
               <ArrowElement
                 path="mailto:her21199@uvg.edu.gt"
-                text="her21199@uvg.edu.gt"
+                text="Send email"
+                color="#000"
               />
             </div>
           </div>
@@ -37,10 +38,12 @@ const Contact = () => {
               <ArrowElement
                 path="https://www.instagram.com/kojimena/"
                 text="Instagram"
+                color="#000"
               />
               <ArrowElement
                 path="https://www.linkedin.com/in/jimena-ortega-202606204/"
                 text="LinkedIn"
+                color="#000"
               />
             </div>
           </div>

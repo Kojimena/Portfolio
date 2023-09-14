@@ -1,18 +1,40 @@
-.buttonContainer button{
-    background-color: transparent;
+.buttonContainer button {
+    width: 150px;
+    height: 50px;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
     border: none;
-    outline: none;
-    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 2%;
-    width: 100%;
-}
+    background-color: transparent;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 50px;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #A0CA68;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 150px;
+   }
 
 .buttonContainer .text{
     font-size: 20px;
-    color : #606887;
+    color : #fff;
     width: 100%;
 }
 
