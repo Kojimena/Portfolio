@@ -20,7 +20,7 @@ const Contact = () => {
         </button>
       </div>
       <div className={styles.title}>
-        <h1>Contact</h1>
+        <h1>Conntact</h1>
       </div>
       <div className={styles.content}>
         <div className={styles.contact}>
