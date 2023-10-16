@@ -154,7 +154,7 @@
 
     .bubble{
         position: absolute;
-        bottom: 20%;
+        top: 40%;
         left: 70%;
         transform: rotate(-90deg);
         width: 400px;
