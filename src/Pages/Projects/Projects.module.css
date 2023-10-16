@@ -4,9 +4,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: linear-gradient(to bottom, #b8e4dc, #96bebc, #77999c, #5b767b, #41545b);
-    position: relative;
-    overflow-y: scroll;
+    background-image: linear-gradient(to bottom, rgba(184, 228, 220, 0.7), rgba(150, 190, 188, 0.7), rgba(119, 153, 156, 0.7), rgba(91, 118, 123, 0.7), rgba(65, 84, 91, 0.7)), url("/images/noise.png");
+
 }
 .header{
     position: absolute;
@@ -39,7 +38,11 @@
     cursor: pointer;
 }
 
-img.image{
+.buttommenu:hover::before {
+    display: none;
+}
+
+img.imagecarrousel{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -48,7 +51,6 @@ img.image{
 
   .contentslider{
     width: 800px;
-    max-height: 600px;
     border-radius: 20px;
 }
 
@@ -70,9 +72,13 @@ img.image{
     padding: 30px;
 }
 
+.projectName{
+    font-family: "HelveticaNeue";
+}
+
 .titleproyects h1 {
     font-size: 40px;
-    color: #41545b;
+    color: rgba(184, 228, 220, 0.7);
     padding: 20px;
     opacity: 0; /* Inicia la opacidad en 0 para el efecto de desvanecimiento */
     position: relative; /* Es necesario para el desplazamiento */
@@ -100,8 +106,7 @@ img.image{
     }
   
     .contentslider{
-      width: 800px;
-      max-height: 600px;
+      width: 80%;
     }
   
     .titleproyects h1 {
@@ -111,53 +116,36 @@ img.image{
     .contentproyects{
         flex-wrap: wrap;
     }
+
+    img.imagecarrousel{
+        height: 600px;
+    }
+
   }
   
-  /* Estilos para pantallas de tamaño mediano (tablets) */
-  @media (min-width: 768px) and (max-width: 1199px) {
-    .projectscontainer{
-        padding: 15px;
-    }
-  
-    .title h1 {
-        font-size: 50px;
-    }
-  
-    .contentslider{
-      width: 600px;
-      max-height: 450px;
-    }
-  
-    .titleproyects h1 {
-        font-size: 30px;
-    }
-  
-    .contentproyects{
-        flex-wrap: wrap;
-    }
-  }
   
   /* Estilos para pantallas pequeñas (teléfonos móviles) */
   @media (max-width: 967px) {
     .projectscontainer{
-        overflow-x: hidden;
-        overflow-y: scroll;
         width: 100%;
-        height: 100vh;
-
     }
   
     .title h1 {
         font-size: 30px;
     }
+
+    .title{
+        padding-top: 10%;
+    }
   
     .contentslider{
-      width: 300px;
+      width: 90%;
       max-height: 225px;
     }
   
     .titleproyects h1 {
         font-size: 20px;
+        text-align: center;
     }
   
     .contentproyects{
@@ -167,6 +155,11 @@ img.image{
     .header{
         top: 1%;
         right: 4%;
+    }
+
+    img.image{
+        width: 350px;
+        height: 200px;
     }
   }
   

@@ -115,7 +115,11 @@ const Stack = () => {
         >
           <img src="/images/github.svg" alt="logo" className={styles.github} />
         </button>
-        <button onClick={handleNavigate} type="button">
+        <button
+          onClick={handleNavigate}
+          type="button"
+          className={styles.buttommenu}
+        >
           <img src="/images/menuwhite.svg" alt="logo" className={styles.menu} />
         </button>
       </div>
@@ -126,21 +130,21 @@ const Stack = () => {
         <div className={styles.stackleftitems}>
           <button
             type="button"
-            className={styles.buttontext}
+            className={styles.buttonstack}
             onClick={showFrameworks}
           >
             <h2>Frameworks</h2>
           </button>
           <button
             type="button"
-            className={styles.buttontext}
+            className={styles.buttonstack}
             onClick={showTools}
           >
             <h2>Herramientas</h2>
           </button>
           <button
             type="button"
-            className={styles.buttontext}
+            className={styles.buttonstack}
             onClick={showLanguages}
           >
             <h2>Lenguajes</h2>

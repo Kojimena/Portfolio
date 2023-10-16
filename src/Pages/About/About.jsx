@@ -9,6 +9,18 @@ const About = () => {
   }
   return (
     <div className={styles.aboutcontainer}>
+      <img
+        src="/images/15.svg"
+        alt="bubble1"
+        className={styles.bubble}
+        loading="lazy"
+      />
+      <img
+        src="/images/15.svg"
+        alt="bubble2"
+        className={styles.bubble2}
+        loading="lazy"
+      />
       <div className={styles.header}>
         <button onClick={handleNavigate} type="button">
           <img src="/images/menuwhite.svg" alt="logo" className={styles.menu} />
@@ -47,7 +59,7 @@ const About = () => {
         </button>
       </div>
       <div className={styles.image}>
-        <img src="/images/profilepic.svg" alt="jime" />
+        <img src="/images/profilepic.png" alt="jime" />
       </div>
     </div>
   )

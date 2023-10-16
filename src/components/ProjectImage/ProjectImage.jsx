@@ -7,7 +7,11 @@ const ProjectImage = ({ name, image, url, desc }) => {
     <div className={styles.projectimagecontainer}>
       <h2 className={styles.proyectname}>{name}</h2>
       <div className={styles.projectimg}>
-        <button type="button" onClick={() => window.open(url)}>
+        <button
+          type="button"
+          onClick={() => window.open(url)}
+          className="buttonproyect"
+        >
           <img src={image} alt="img" className={styles.image} />
         </button>
       </div>

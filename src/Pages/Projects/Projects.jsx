@@ -74,16 +74,26 @@ const Projects = () => {
       url: "https://sage-palmier-936be2.netlify.app/",
       desc: "Página de empleos usando React",
     },
+    {
+      name: "Diseño de portafolio",
+      image: "/images/portfolio1.png",
+      url: "https://www.figma.com/file/GEO4qG5W3g8GNyMXVvRcrP/ANGELCAS-PORTFOLIO?type=design&node-id=0%3A1&mode=design&t=hfuRm3MNtqZLRbw9-1",
+      desc: "Diseño de portafolio",
+    }
   ]
   return (
     <div className={styles.projectscontainer}>
       <div className={styles.header}>
-        <button onClick={handleNavigate} type="button">
+        <button
+          onClick={handleNavigate}
+          type="button"
+          className={styles.buttommenu}
+        >
           <img src="/images/menuwhite.svg" alt="logo" className={styles.menu} />
         </button>
       </div>
       <div className={styles.title}>
-        <h1>Proyectos</h1>
+        <h1>Prroyectos</h1>
       </div>
       <div className={styles.contentslider}>
         <Swiper
@@ -91,36 +101,72 @@ const Projects = () => {
           pagination={{
             clickable: true,
           }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
           modules={[Pagination]}
           className="mySwiper"
         >
           <SwiperSlide
-            onMouseEnter={() => handleMouseEnter("Margherita")}
-            onMouseLeave={handleMouseLeave}
-          >
-            <img
-              src="/images/margherita.png"
-              alt="img"
-              className={styles.image}
-            />
-          </SwiperSlide>
-          <SwiperSlide
             onMouseEnter={() => handleMouseEnter("YVM")}
             onMouseLeave={handleMouseLeave}
           >
-            <img src="/images/yvm.png" alt="img" className={styles.image} />
+            <a href="https://yovotomejor.com/" target="_blank" rel="noreferrer">
+              <img
+                src="/images/yvm.png"
+                alt="img"
+                className={styles.imagecarrousel}
+              />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide
+            onMouseEnter={() => handleMouseEnter("La pista")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="https://lapista.gt/" target="_blank" rel="noreferrer">
+              <img
+                src="/images/lapista.png"
+                alt="img"
+                className={styles.imagecarrousel}
+              />
+            </a>
           </SwiperSlide>
           <SwiperSlide
             onMouseEnter={() => handleMouseEnter("NacionSushi")}
             onMouseLeave={handleMouseLeave}
           >
-            <img src="/images/nc.png" alt="img" className={styles.image} />
+            <a href="https://nacion.delivery/" target="_blank" rel="noreferrer">
+              <img
+                src="/images/nc.png"
+                alt="img"
+                className={styles.imagecarrousel}
+              />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide
+            onMouseEnter={() => handleMouseEnter("Luka")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="https://luka.gt/" target="_blank" rel="noreferrer">
+              <img
+                src="/images/luka.png"
+                alt="img"
+                className={styles.imagecarrousel}
+              />
+            </a>
           </SwiperSlide>
           <SwiperSlide
             onMouseEnter={() => handleMouseEnter("Paez")}
             onMouseLeave={handleMouseLeave}
           >
-            <img src="/images/paez.png" alt="img" className={styles.image} />
+            <a href="https://paez.com" target="_blank" rel="noreferrer">
+              <img
+                src="/images/paez.png"
+                alt="img"
+                className={styles.imagecarrousel}
+              />
+            </a>
           </SwiperSlide>
           {projectName && (
             <div className={styles.projectName}>{projectName}</div>
@@ -128,7 +174,7 @@ const Projects = () => {
         </Swiper>
       </div>
       <div className={styles.titleproyects}>
-        <h1>Otros proyectos</h1>
+        <h1>OTRROS PROOYECTOS</h1>
       </div>
       <div className={styles.contentproyects}>
         {arrayProjects.map((project) => (

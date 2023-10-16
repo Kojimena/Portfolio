@@ -84,7 +84,7 @@
 
 .bubble{
     position: absolute;
-    top: -40%;
+    top: -30%;
     left: 60%;
     transform: rotate(-90deg);
     width: 400px;
@@ -94,7 +94,7 @@
 
 .bubble2{
     position: absolute;
-    bottom: -40%;
+    bottom: -30%;
     right: 80%;
     transform: rotate(10deg);
     width: 400px;
@@ -136,7 +136,6 @@
     }
     .contactItem h2{
         font-size: 20px;
-        color: #41545b;
         text-transform: uppercase;
     
     }

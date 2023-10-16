@@ -7,9 +7,13 @@
   position: relative;
   overflow-y: scroll;
   background-image: url("/images/noise.png");
-    background-color: #040404;
+    background-color: #3333;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.buttonstack:hover::before, .buttommenu:hover::before {
+  display: none;
 }
 
 .header{
@@ -136,6 +140,7 @@
     background-color: transparent;
     align-items: center;
     padding-top: 40px;
+    background-color: rgba(184, 228, 220, 0.7);
   }
 
   .element{
