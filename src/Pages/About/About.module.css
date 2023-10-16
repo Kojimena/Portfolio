@@ -6,6 +6,7 @@
     position: relative;
     overflow-y: hidden;
     background-color: #606887;
+    justify-content: flex-end;
     min-height: 100vh;
     overflow-x: hidden;
     background-image: url("/images/noise.png");
