@@ -101,6 +101,10 @@
       height: 200px;
     }
 
+    .menucontainer{
+      height: 100vh;
+    }
+
     .menucontainer .bubble{
         top: -10%;
         left: 60%;
