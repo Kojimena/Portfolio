@@ -182,7 +182,6 @@ const Projects = () => {
             name={project.name}
             image={project.image}
             url={project.url}
-            desc={project.desc}
           />
         ))}
       </div>

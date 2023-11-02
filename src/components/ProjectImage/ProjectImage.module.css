@@ -91,13 +91,6 @@
   
   /* Estilos para pantallas pequeñas (teléfonos móviles) */
   @media (max-width: 767px) {
-    .projectimagecontainer{
-        width: 150px;
-    }
-  
-    .projectimg {
-        max-height: 150px;
-    }
   
     .proyectname {
         font-size: 15px;
@@ -106,6 +99,10 @@
 
     .projectdesc{
         display: none;
+    }
+
+    .projectimg{
+        width: 80%;
     }
   }
   

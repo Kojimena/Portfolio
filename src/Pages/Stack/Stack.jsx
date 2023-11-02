@@ -112,6 +112,7 @@ const Stack = () => {
         <button
           onClick={() => window.open("https://github.com/Kojimena")}
           type="button"
+          className={styles.buttommenu}
         >
           <img src="/images/github.svg" alt="logo" className={styles.github} />
         </button>

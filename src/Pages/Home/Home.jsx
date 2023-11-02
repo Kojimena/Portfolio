@@ -45,6 +45,7 @@ const Home = () => {
         </div>
         <div className={styles.description}>
           <p>Front-end web developer y diseñadora UX/UI </p>
+          <p>(made in Guatemala)</p>
         </div>
         <div className={styles.arrow}>
           <ArrowElement text="Proyectos" path="/projects" />

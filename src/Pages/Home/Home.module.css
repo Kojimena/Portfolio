@@ -173,12 +173,12 @@
   }
 
   .homecontainer .bubble{
-    top: -20%;
-    left: 50%;
+    top: 20%;
+    left: 80%;
   }
 
   .homecontainer .bubble2{
-    bottom: -20%;
+    bottom: 0;
     right: 80%;
   }
 
@@ -188,7 +188,7 @@
   }
 
   .homecontainer .bubble4{
-    top: -20%;
+    top: -10%;
     left: -10%;
   }
 }
