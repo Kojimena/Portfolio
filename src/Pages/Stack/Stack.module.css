@@ -32,6 +32,10 @@
     border-bottom: 5px solid #fff;
 }
 
+.buttommenu:hover::before {
+  display: none;
+}
+
 .title{
   display: flex;
   align-items: center;

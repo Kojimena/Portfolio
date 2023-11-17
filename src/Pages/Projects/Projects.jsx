@@ -79,7 +79,7 @@ const Projects = () => {
       image: "/images/portfolio1.png",
       url: "https://www.figma.com/file/GEO4qG5W3g8GNyMXVvRcrP/ANGELCAS-PORTFOLIO?type=design&node-id=0%3A1&mode=design&t=hfuRm3MNtqZLRbw9-1",
       desc: "Diseño de portafolio",
-    }
+    },
   ]
   return (
     <div className={styles.projectscontainer}>
@@ -163,6 +163,34 @@ const Projects = () => {
             <a href="https://paez.com" target="_blank" rel="noreferrer">
               <img
                 src="/images/paez.png"
+                alt="img"
+                className={styles.imagecarrousel}
+              />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide
+            onMouseEnter={() => handleMouseEnter("Banky")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="https://bankychat.com/" target="_blank" rel="noreferrer">
+              <img
+                src="/images/banky.png"
+                alt="img"
+                className={styles.imagecarrousel}
+              />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide
+            onMouseEnter={() => handleMouseEnter("La Tavola")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a
+              href="https://shop.latavolabistro.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/tavola.png"
                 alt="img"
                 className={styles.imagecarrousel}
               />
